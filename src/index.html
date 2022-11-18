@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/output.css">
+  <title>CV | Ahmad Fadilah</title>
+</head>
+
+<body class="bg-slate-200">
+  <div class="p-4 grid scroll-smooth">
+    <!-- Tanggal, Waktu, dll -->
+    <div
+      class="bg-slate-300 h-[6rem] flex justify-around rounded-full text-center border-4 border-slate-400 text-slate-600 font-mono">
+      <div class="my-auto ml-3">
+        <h1 class="text-3xl" id="name"></h1>
+      </div>
+      <div class="my-auto ml-3">
+        <h1 class="text-3xl" id="day"></h1>
+      </div>
+      <div class="my-auto mr-3">
+        <h1 class="text-3xl" id="time">Jam</h1>
+        <h1 class="text-3xl" id="date"></h1>
+      </div>
+    </div>
+    <!-- Nama & Foto -->
+    <div
+      class="flex bg-blue-200 border-4 border-blue-300 w-3/4 h-[12rem] p-3 mt-[5rem] justify-between justify-self-center rounded-full mb-[5rem]">
+      <!-- Image -->
+      <div class="block w-[10rem] bg-slate-200 bg-[url('../dist/img/profile.jpg')] bg-cover rounded-full">
+      </div>
+      <!-- Nametag -->
+      <div class="grid font-bold mx-auto text-center font-serif">
+        <h1 class="text-5xl my-auto">Ahmad Fadilah</h1>
+        <h1 class="text-3xl italic">Web Developer</h1>
+      </div>
+    </div>
+
+    <div class="flex justify-between">
+      <div class="h-[150vh] bg-blue-200 w-1/2 rounded-2xl mr-[0.5rem] border-4 border-blue-300">
+        <div class="grid p-3" id="sidebar">
+        </div>
+        <div class="text-center">
+          <h1 class="text-xl">&copy; <a href="https://github.com/ahmdf20" target="_blank">Ahmdf20</a></h1>
+        </div>
+      </div>
+      <div class="h-[150vh] bg-slate-300 w-full rounded-2xl ml-[0.5rem] border-4 border-slate-400">
+        <div class="grid p-3 font-serif">
+          <div class="ml-3 mb-5">
+            <h1 class="text-5xl mb-3">Profile</h1>
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quis, fugiat,
+              debitis
+              hic cum dolores exercitationem nostrum unde porro quos quasi illo necessitatibus qui quibusdam
+              consequuntur
+              officia nulla reiciendis mollitia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+              delectus nam libero? Perferendis corporis, saepe expedita atque aspernatur magni id commodi? Ratione
+              deserunt laudantium aspernatur ipsum quasi voluptatem, illum nemo.</p>
+          </div>
+          <h1 class="text-5xl ml-3 mb-5">Experience</h1>
+          <hr class="border-black mb-5 w-3/5 ml-3">
+          <div class="mb-5 ml-3" id="experience">
+          </div>
+          <div class="mb-5 ml-3 grid">
+            <h1 class="text-5xl">Skills</h1>
+            <hr class="border-black w-3/5 my-[1rem]">
+            <div class="flex">
+              <div class="grid">
+                <label class="block relative pl-[30px] mb-[12px] cursor-pointer text-2xl">
+                  <input type="checkbox" checked="checked" class="">
+                  <span class="checkmark"></span>
+                  Codeigniter
+                </label>
+                <label class="block relative pl-[30px] mb-[12px] cursor-pointer text-2xl">
+                  <input type="checkbox" class="">
+                  <span class="checkmark"></span>
+                  React
+                </label>
+                <label class="block relative pl-[30px] mb-[12px] cursor-pointer text-2xl">
+                  <input type="checkbox" class="">
+                  <span class="checkmark"></span>
+                  NodeJS
+                </label>
+              </div>
+              <div class="grid">
+                <label class="block relative pl-[30px] mb-[12px] cursor-pointer text-2xl">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  Ajax
+                </label>
+                <label class="block relative pl-[30px] mb-[12px] cursor-pointer text-2xl">
+                  <input type="checkbox" class="">
+                  <span class="checkmark"></span>
+                  JQuery
+                </label>
+                <label class="block relative pl-[30px] mb-[12px] cursor-pointer text-2xl">
+                  <input type="checkbox" class="">
+                  <span class="checkmark"></span>
+                  Express
+                </label>
+              </div>
+              <div class="grid">
+                <label class="block relative pl-[30px] mb-[12px] cursor-pointer text-2xl">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  MS Office
+                </label>
+                <label class="block relative pl-[30px] mb-[12px] cursor-pointer text-2xl">
+                  <input type="checkbox" class="">
+                  <span class="checkmark"></span>
+                  Text here
+                </label>
+                <label class="block relative pl-[30px] mb-[12px] cursor-pointer text-2xl">
+                  <input type="checkbox" class="">
+                  <span class="checkmark"></span>
+                  Text here
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="grid mb-5 ml-3">
+            <h1 class="text-2xl">Select one skill is needed : </h1>
+            <hr class="w-3/5 border-black my-2">
+            <form method="get" name="selectskill" class="mb-3">
+              <div class="grid text-xl">
+                <label for="skill">
+                  <input type="radio" name="skill" value="Administrator" onchange="checkSkill('1')">
+                  Administrator
+                </label>
+                <label for="skill">
+                  <input type="radio" name="skill" value="Design" onchange="checkSkill('2')">
+                  Design
+                </label>
+                <label for="skill">
+                  <input type="radio" name="skill" value="Web Programming" onchange="checkSkill('3')">
+                  Web Programming
+                </label>
+              </div>
+            </form>
+            <div class="text-xl">
+              <div class="flex my-auto mb-5">
+                <h1>Recomendation skill : </h1>
+                <input type="text" id="recomendation" readonly value="--Select Skill at above--"
+                  class="rounded-md h-[2rem] w-[26rem] p-3 ml-3">
+              </div>
+            </div>
+            <div class="flex text-xl mb-3">
+              <div>
+                <h1>Kami team HRD : </h1>
+              </div>
+              <div>
+                <input type="text" class="h-[2rem] p-2 mx-3 rounded-md w-[16rem]" placeholder="Nama Perusahaan"
+                  id="perusahaan">
+              </div>
+              <div>
+                <h1>telah membaca CV anda.</h1>
+              </div>
+            </div>
+            <button class="bg-blue-300 w-[6rem] rounded-md p-1" onclick="message()">Kirim</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+  <script src="./data.js"></script>
+
+</body>
+
+</html>
