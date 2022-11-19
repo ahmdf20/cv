@@ -1,4 +1,4 @@
-const daysName = ['Monday', 'Tuesday', 'Wednesday', 'Thuesday', 'Friday', 'Saturday', 'Sunday']
+const daysName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thuesday', 'Friday', 'Saturday']
 const monthName = ['January', 'February', 'March', 'April', 'Mei', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 let calendar = new Date()
 let day = calendar.getDay()
@@ -7,7 +7,7 @@ let month = calendar.getMonth()
 let year = calendar.getFullYear()
 let name = prompt("Inputkan nama anda!")
 document.getElementById('name').innerText = `Hello ${name}\nWelcome to my CV!`
-document.getElementById('day').innerText = daysName[day - 1]
+document.getElementById('day').innerText = daysName[day]
 document.getElementById('date').innerText = `${date} ${monthName[month]} ${year}`
 
 const clock = () => {
